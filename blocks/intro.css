@@ -1,0 +1,37 @@
+.intro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  align-content: center;
+}
+
+/*.intro__image {
+  height: 273px;
+  width: 345px;
+  margin-left: 50px;
+}*/
+
+/*.intro__image:hover {
+  background-image: url(../images/badge2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 2;
+}*/
+
+input[type="checkbox"] {
+  content: url(../images/laptop.png);
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+input[type="checkbox"]:checked {
+  content: url(../images/badge.png);
+}
+.native-hidden {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: 150px;
+  margin-bottom: 25px;
+}
