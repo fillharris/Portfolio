@@ -27,6 +27,7 @@
 .footer__link{
   color: white; 
   font-size: 1.7rem;
+  padding: 10px;
 }
 
 .footer__link:hover {
