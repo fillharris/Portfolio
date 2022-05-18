@@ -43,7 +43,7 @@
   <body class="page">
     <!----------------------- start header content ---------------------->
     <header class="header">
-      <nav id="nav" class="nav navbar navbar-expand-lg navbar-default navbar-fixed-top">
+      <nav id="nav" class="nav navbar fixed-top navbar-expand-lg navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand nav__logo" href="#">Philip Harris</a>
           <button
@@ -62,7 +62,7 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link nav__link active"
+                  class="nav-link nav__link active" style="color: #2046c2;"
                   aria-current="page"
                   href="#"
                   >Home</a
@@ -75,7 +75,7 @@
                 <a class="nav-link nav__link" href="#porfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav__link" href="#footer">Contact</a>
+                <a class="nav-link nav__link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav__link" href="#porfolio">Blog</a>
@@ -98,12 +98,12 @@
               <h1 class="banner__subtitle title-text text-uppercase">
                 I am phil
               </h1>
-              <h6 class="banner__sub-subtitle title-text text-uppercase">
+              <h6 class="banner__subtitle title-text text-uppercase">
                 I like to build | refractor | and maintain | code
               </h6>
               <button
                 type="button"
-                class="btn btn-primary text-uppercase banner__button"
+                class="btn btn-primary btn-info btn-block btn-lg text-uppercase banner__button"
               >
                 Contact Me
               </button>
@@ -139,6 +139,43 @@
       <div class="test"></div>
     </div>
     <!----------------------- end main content ---------------------->
+
+    <!----------------------- start contact form ---------------------->
+
+    <div id="contact" class="container contact">
+      <h1 class="contact__title text-uppercase">contact me!</h1>
+      <form action="" class="row g-3 contact__form">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="col-md-8">
+          <label for="emailInfo" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInfo" required>
+        </div>
+        <div class="col-md-4">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (555) 555-5555">
+        </div>
+        <div class="col-md-12">
+          <label for="comments" class="form-label">Comments or questions?</label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <div class="col-md-12">
+        <button
+        type="submit"
+        class="btn btn-primary btn-info btn-block btn-lg text-uppercase banner__button"
+      >
+        Submit
+      </button>
+    </div>
+      </form>
+    </div>
+    <!---------------------- end contact form ----------------------->
     <!----------------------- start footer content --------------------->
     <footer id="footer" class="footer">
       <div class="container">

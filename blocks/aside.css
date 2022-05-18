@@ -2,9 +2,11 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-color: #2046c2;
+  background-color: black;
   margin-top: 275px;
   border-radius: 10px 0 0 10px;
+  max-width: 500px;
+  overflow: hidden;
 }
 
 .aside__title {
@@ -17,7 +19,7 @@
 
 .aside__paragraph {
   color: #fff;
-  padding: 15px 35px 15px 35px;
+  padding: 15px 10px 15px 10px;
   margin: 0;
   line-height: 1.7rem;
   font-size: 1rem;

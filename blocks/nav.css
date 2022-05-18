@@ -1,5 +1,9 @@
 .nav{
-  margin: 35px 150px 0px 150px;
+  padding: 30px 150px 20px 150px;
+  background-color: white;
+  -moz-box-shadow: 0 4px 2px -2px 4px #ccc;
+  -webkit-box-shadow: 0 4px 2px -2px #ccc;
+  box-shadow: 0 4px 2px -2px  #ccc;
 }
 .nav__logo {
   color: #000;
@@ -17,8 +21,4 @@
 .nav__link:hover {
   color: #2046c2;
   transition: ease-in-out 400ms;
-}
-
-#nav .nav__link .active a{
-  color: #2046c2 !important;
 }
