@@ -1,36 +1,10 @@
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  background-color: #fff;
-  height: 50px;
-  padding: 1em;
-  box-sizing: border-box;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
+.nav{
+  margin: 35px 150px 0px 150px;
 }
-
 .nav__logo {
   color: #000;
   font-weight: bold;
-}
-
-.nav__links {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__links .nav__link {
-  margin: 0 1rem;
+  font-size: 25px;
 }
 
 .nav__link {
@@ -45,94 +19,6 @@
   transition: ease-in-out 400ms;
 }
 
-.nav__button_container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#nav__toggle {
-  display: none;
-}
-
-.nav__button,
-.nav__button::before,
-.nav__button::after {
-  display: block;
-  background-color: #000;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.nav__button::before {
-  content: "";
-  margin-top: -8px;
-}
-
-.nav__button::after {
-  content: "";
-  margin-top: 8px;
-}
-
-#nav__toggle:checked + .nav__button_container .nav__button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#nav__toggle:checked + .nav__button_container .nav__button {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#nav__toggle:checked + .nav__button_container .nav__button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .nav__button_container {
-    display: flex;
-  }
-  .nav__links {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
-  }
-
-  #nav__toggle ~ .nav__links .nav__link {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: all 0.1s ease;
-  }
-
-  #nav__toggle:checked ~ .nav__links .nav__link {
-    top: 0;
-    height: 0;
-    margin-bottom: 2em;
-    padding: 0.5em;
-    transition: all 0.3s ease;
-  }
-
-  #nav__toggle:checked ~ .nav__links {
-    margin-top: 100px;
-    background-color: #fff;
-  }
-
-  .nav__button:hover {
-    background-color: #2046c2;
-    transition: ease-in-out 400ms;
-  }
+#nav .nav__link .active a{
+  color: #2046c2 !important;
 }

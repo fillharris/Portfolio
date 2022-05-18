@@ -1,9 +1,3 @@
-.intro {
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  align-content: center;
-}
 
 /*.intro__image {
   height: 273px;
@@ -34,4 +28,6 @@ input[type="checkbox"]:checked {
   appearance: none;
   margin-left: 150px;
   margin-bottom: 25px;
+  margin-top: 275px;
+  padding: 0%;
 }

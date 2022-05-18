@@ -4,11 +4,7 @@
   flex-direction: column;
   background-color: #2046c2;
   margin-top: 275px;
-  margin-left: auto;
-  max-width: 1600px;
-  min-width: 350px;
   border-radius: 10px 0 0 10px;
-  width: 50%;
 }
 
 .aside__title {
@@ -16,6 +12,7 @@
   font-size: 1.5rem;
   margin: 0;
   padding-top: 15px;
+  text-align: center;
 }
 
 .aside__paragraph {

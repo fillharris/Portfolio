@@ -13,66 +13,150 @@
       content="web developement, software engineer, coder, programmer, dev"
     />
     <meta name="author" content="Philip Harris" />
+    <link rel="icon"  type="image/png" href="/favicon-16x16.png">
+    <!--------------------- google fonts links ---------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Oswald:wght@200;300;500&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;1,400&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!---------------------- bootstrap css cdn link --------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!---------------------- bootstrap icons link ---------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+
+    <!------------------------ custom css file ---------------------->
     <link rel="stylesheet" href="./pages/index.css" />
     <title>PhilipHarris</title>
   </head>
   <body class="page">
+    <!----------------------- start header content ---------------------->
     <header class="header">
-      <nav class="nav">
-        <div class="nav__logo">PHILIP HARRIS</div>
-        <input id="nav__toggle" type="checkbox" />
-        <label class="nav__button_container" for="nav__toggle">
-          <div class="nav__button"></div>
-        </label>
-        <ul class="nav__links">
-          <li class="nav__link">
-            <a class="nav__link" href="#aside">About</a>
-          </li>
-          <li class="nav__link">
-            <a class="nav__link" href="#projects">Projects</a>
-          </li>
-          <li class="nav__link">
-            <a class="nav__link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <nav id="nav" class="nav navbar navbar-expand-lg navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand nav__logo" href="#">Philip Harris</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="ms-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav__link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#aside">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#porfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="#porfolio">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <section id="about" class="about">
-      <h1 class="about__title">Full-stack Engineer</h1>
-      <p class="about__subtitle">What I do:</p>
-      <p class="about__sub-subtitle">BUILD | FIX | MAINTAIN | CODE</p>
-      <div class="intro">
-      <!--<img
-          class="intro__image"
-          src="./images/laptop.png
-      "
-          alt=""
-          /> -->
-          <input class="native-hidden" type="checkbox" />
-          <aside id="aside" class="aside">
-            <h2 class="aside__title">Hi, I'm Phil. Thanks for stopping by.</h2>
-            <p class="aside__paragraph">
-              Before discovering code I had the privilge of serving as a law
-              enforcement officer for nearly twenty years. While learning to code
-              as a hobby, I discovered that I could leverage the skills I
-              developed as a law enforcement officer and apply them to software
-              developement. Skills like problem solving, deductive reasoning,
-              teamwork, and time management to name a few.
-            </p>
-          </div> 
-        </aside>
+    <!----------------------- end header content ---------------------->
+    <!----------------------- start main content ---------------------->
+
+    <!----------------------- start banner content ---------------------->
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="banner">
+              <h3 class="banner__title title-text text-uppercase">Hi</h3>
+              <h1 class="banner__subtitle title-text text-uppercase">
+                I am phil
+              </h1>
+              <h6 class="banner__sub-subtitle title-text text-uppercase">
+                I like to build | refractor | and maintain | code
+              </h6>
+              <button
+                type="button"
+                class="btn btn-primary text-uppercase banner__button"
+              >
+                Contact Me
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12"></div>
+        </div>
+      </div>
     </section>
+    <!----------------------- end banner content ---------------------->
+    <!----------------------- start about content ---------------------->
+    <div class="container intro">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <input class="native-hidden" type="checkbox" />
+        </div>
+        <div id="aside" class="col-lg-6 col-md-12 row aside">
+          <h2 class="aside__title">Thanks for stopping by.</h2>
+          <p class="aside__paragraph">
+            Before discovering code I had the privilge of serving as a law
+            enforcement officer for nearly twenty years. While learning to code
+            as a hobby, I discovered that I could leverage the skills I
+            developed as a law enforcement officer and apply them to software
+            developement. Skills like problem solving, deductive reasoning,
+            teamwork, and time management to name a few.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!----------------------- end about content ---------------------->
+
     <div class="main">
       <div class="test"></div>
     </div>
-    <footer class="footer">
+    <!----------------------- end main content ---------------------->
+    <!----------------------- start footer content --------------------->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <a href="https://github.com/fillharris" target="_blank"><i class="bi bi-github footer__link"></i></a>
+          <a href="https://www.linkedin.com/in/philip-harris-dev/" target="_blank"><i class="bi bi-linkedin footer__link"></i></a>
+          <a href="https://twitter.com/philiplikescode" target="_blank"><i class="bi bi-twitter footer__link"></i></a>
+          <a href="mailto:contact.a6c0y@aleeas.com" target="_blank"><i class="bi bi-envelope-fill footer__link"></i></a>
+        </div>
+      </div>
       <p class="footer__copyright">&copy; 2022 Philip Harris</p>
     </footer>
+    <!---------------------- end footer content ----------------------->
+    <!---------------------- bootstrap js cdn link ---------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
