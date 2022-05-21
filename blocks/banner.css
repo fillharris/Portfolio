@@ -41,6 +41,14 @@
   border: 5px solid black;
   color: black;
   font-weight: 800;
+  position: relative;
+
+}
+
+.banner__arrow-img{
+  position: absolute;
+  top: 120px;
+  left: 160px;
 }
 
 .banner__button:hover,
