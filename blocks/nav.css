@@ -1,14 +1,20 @@
-.nav{
-  padding: 20px 150px 15px 150px;
-  background-color: white;
-  -moz-box-shadow: 0 4px 2px -2px 4px #ccc;
-  -webkit-box-shadow: 0 4px 2px -2px #ccc;
-  box-shadow: 0 4px 2px -2px  #ccc;
+.nav {
+  padding: 0 9.5rem 1rem 9.5rem;
 }
 .nav__logo {
-  color: #000;
-  font-weight: bold;
-  font-size: 25px;
+  color: white;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding: 20px 20px 10px 20px;
+  background-color: black;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #c2f292;
+  transition: ease-in-out 400ms;
 }
 
 .nav__link {
@@ -19,6 +25,7 @@
 }
 
 .nav__link:hover {
-  color: #2046c2;
+  color: #fd698c;
   transition: ease-in-out 400ms;
 }
+
