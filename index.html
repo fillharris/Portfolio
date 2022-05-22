@@ -103,10 +103,10 @@
         <div class="row">
           <div class="col-lg-6 col-md-12 banner-text">
             <div class="banner">
-              <h3 class="banner__title title-text text-uppercase">Hi</h3>
-              <h1 class="banner__subtitle title-text text-uppercase">
+              <h1 class="banner__title h3 title-text text-uppercase">Hi</h1>
+              <h3 class="banner__subtitle h1 title-text text-uppercase">
                 I am phil
-              </h1>
+              </h3>
               <h6 class="banner__sub-subtitle title-text text-uppercase">
                 I like to build | refractor | maintain | code
               </h6>
@@ -140,16 +140,33 @@
       </div>
     </div>
     <!----------------------- end about content ---------------------->
-    <div class="container portfolio">
+    <!----------------------- start skills content --------------------->
+    <div class="container-fluid col-md-12 skills">
+      <h2 class="skills__title title-text text-uppercase text-center">Technologies</h2>
+      <div class="container skills__container d-flex justify-content-center">
+      <ul class="skills__links"><li class="skills__item"><a class="skills__link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img class="skills__image" src="./images/icons8-javascript-96.png" alt="javascript logo"/> </a></li>
+      <li class="skills__item"><a class="skills__link" href="https://html.spec.whatwg.org/multipage/" target="_blank"> <img class="skills__image" src="./images/icons8-html-5-96.png" alt="html 5 logo"/> </a</li>
+      <li class="skills__item"><a class="skills__link" href="https://www.w3schools.com/css/" target="_blank"> <img class="skills__image" src="./images/icons8-css3-96.png" alt="css logo"/> </a></li>
+      <!-- <li class="skills__item"><a class="skills__link" href="https://getbootstrap.com" target="_blank"> <img class="skills__image" src="./images/icons8-bootstrap-a-free-and-open-source-css-framework-96.png" alt="bootstrap 5 logo"/> </a></li> -->
+      <li class="skills__item"><a class="skills__link" href="https://git-scm.com/" target="_blank"> <img class="skills__image" src="./images/icons8-git-96.png" alt="git logo"/> </a></li></ul>
+    </div>
+    </div>
+<!----------------------- end skills content --------------------->
+<!----------------------- start portfolio content --------------------->
+<div class="portfolio">
+<h2 class="portfolio__title title-text text-uppercase text-center">my work</h2>
+<img src="./images/checkout2.png" alt="arrow" class="img-fluid d-none d-sm-block portfolio__arrow-img">
+</div>
+    <div class="container portfolio__container">
       <div class="row mb-4">
         <div class="col-sm-4">
           <div class="card">
-            <img
-                src="./images/portfolio-filler.png"
-                class="img-fluid card-img-top portfolio__card-image"
-                alt="project filler"
-              />
             <div class="card-body portfolio__card-body">
+              <img
+                  src="./images/portfolio-filler.png"
+                  class="img-fluid card-img-top portfolio__card-image"
+                  alt="project filler"
+                />
               
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -177,12 +194,12 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-            <img
-                src="./images/portfolio-filler.png"
-                class="img-fluid card-img-top portfolio__card-image"
-                alt="project filler"
-              />
             <div class="card-body portfolio__card-body">
+              <img
+                  src="./images/portfolio-filler.png"
+                  class="img-fluid card-img-top portfolio__card-image"
+                  alt="project filler"
+                />
               
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -210,12 +227,12 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-            <img
-            src="./images/portfolio-filler.png"
-            class="img-fluid card-img-top portfolio__card-image"
-            alt="project filler"
-          />
             <div class="card-body portfolio__card-body">
+              <img
+              src="./images/portfolio-filler.png"
+              class="img-fluid card-img-top portfolio__card-image"
+              alt="project filler"
+            />
              
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -245,12 +262,12 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="card">
-            <img
-                src="./images/portfolio-filler.png"
-                class="img-fluid card-img-top portfolio__card-image"
-                alt="project filler"
-              />
             <div class="card-body portfolio__card-body">
+              <img
+                  src="./images/portfolio-filler.png"
+                  class="img-fluid card-img-top portfolio__card-image"
+                  alt="project filler"
+                />
               
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -278,12 +295,12 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-            <img
-                src="./images/portfolio-filler.png"
-                class="img-fluid card-img-top portfolio__card-image"
-                alt="project filler"
-              />
             <div class="card-body portfolio__card-body">
+              <img
+                  src="./images/portfolio-filler.png"
+                  class="img-fluid card-img-top portfolio__card-image"
+                  alt="project filler"
+                />
               
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -311,12 +328,12 @@
         </div>
         <div class="col-sm-4">
           <div class="card">
-            <img
-                src="./images/portfolio-filler.png"
-                class="img-fluid card-img-top portfolio__card-image"
-                alt="project filler"
-              />
             <div class="card-body portfolio__card-body">
+              <img
+                  src="./images/portfolio-filler.png"
+                  class="img-fluid card-img-top portfolio__card-image"
+                  alt="project filler"
+                />
               
               <h5 class="card-title portfolio__card-title">
                 Special title treatment
@@ -344,7 +361,7 @@
         </div>
       </div>
     </div>
-
+    
     <!----------------------- end portfolio content ----------------------->
     <!----------------------- end main content ---------------------->
 
@@ -355,8 +372,8 @@
         <form
           action=""
           class="row g-3 contact__form"
-          action="https://formsubmit.co/contact.a6c0y@aleeas.com"
-          method="POST"
+          action=""
+          method=""
         >
           <div class="col-md-6">
             <label for="firstName" class="form-label">First Name</label>

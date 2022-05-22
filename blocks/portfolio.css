@@ -1,3 +1,30 @@
+.portfolio{
+  position: relative;
+}
+
+.portfolio__container{
+  margin-top: 7rem;
+}
+.portfolio__title{
+  width: 20rem;
+  font-weight: 900;
+  background-color: #c2f292;
+  -moz-box-shadow: 10px 10px black;
+  -webkit-box-shadow: 10px 10px black;
+  box-shadow: 10px 10px black;
+  border: 10px solid black;
+  margin: auto;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.portfolio__arrow-img{
+  position: absolute;
+  top:-175px;
+  right: 170px;
+}
+
+
 .portfolio__button {
   margin-top: 20px;
   background-color: #fd698c;
@@ -39,6 +66,7 @@
 .portfolio__card-body {
   background-color: #ffeda0;
   color: black;
+  padding: 0.5rem;
  
   
 }

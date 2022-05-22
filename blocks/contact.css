@@ -1,6 +1,6 @@
 .contact{
   color: black;
-  max-width: 980px;
+  max-width: 880px;
   -moz-box-shadow: 10px 10px black;
   -webkit-box-shadow: 10px 10px black;
   box-shadow: 10px 10px black;
@@ -13,6 +13,8 @@
 
 .contact__form{
     padding: 15px;
+  
+
 }
 
 .contact__title{

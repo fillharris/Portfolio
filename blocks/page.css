@@ -1,8 +1,18 @@
 .page {
-  font-family: 'Darker Grotesque', sans-serif;
-  color: #fff;
-  background-color: #FFDE82;
-  margin: 0;
+  font-family: "Darker Grotesque", sans-serif;
+  color: black;
+  background-color: #ffde82;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
   opacity: 0.911;
-
 }
