@@ -1,11 +1,12 @@
-.portfolio{
+.portfolio {
   position: relative;
 }
 
-.portfolio__container{
+.portfolio__container {
   margin-top: 7rem;
+  
 }
-.portfolio__title{
+.portfolio__title {
   width: 20rem;
   font-weight: 900;
   background-color: #c2f292;
@@ -18,12 +19,11 @@
   position: relative;
 }
 
-.portfolio__arrow-img{
+.portfolio__arrow-img {
   position: absolute;
-  top:-175px;
+  top: -175px;
   right: 170px;
 }
-
 
 .portfolio__button {
   margin-top: 20px;
@@ -49,7 +49,18 @@
   font-weight: 600;
 }
 
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0;
+  pointer-events: none;
+}
+
 .card {
+  margin: 0px;
   -moz-box-shadow: 5px 5px black;
   -webkit-box-shadow: 5px 5px black;
   box-shadow: 5px 5px black;
@@ -57,36 +68,67 @@
   border-bottom-left-radius: 2px;
   border: 5px solid black;
   padding: 0;
+  pointer-events: auto;
+
+  transform: scale(1);
+  opacity: 1;
+  transition: all 150ms ease-in-out;
 }
 
-.card:focus{
+.card:focus {
   outline: none;
+}
+
+.cards:hover> .card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.cards:hover> .card:not(:hover) {
+  opacity: 0.7;
+  
 }
 
 .portfolio__card-body {
   background-color: #ffeda0;
   color: black;
-  padding: 0.5rem;
- 
-  
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
-.portfolio__card-body:focus{
+.portfolio__card-body:focus {
   outline: none;
 }
 
-.portfolio__card-image{
+.portfolio__card-image {
   display: block;
-    padding: 0;
-    border-radius: 0;
-    height:auto;
-    
+  padding: 0;
+  border-radius: 0;
+  height: auto;
 }
 
-.portfolio__card-image:focus{
+.portfolio__card-image:focus {
   outline: none;
 }
 
-.portfolio__card-title{
-    font-weight: 600;
+.portfolio__card-title {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }

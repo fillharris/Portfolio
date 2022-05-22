@@ -1,5 +1,4 @@
 .skills{
-    width: 880px;
     margin: auto;
 }
 
@@ -16,7 +15,6 @@
 
 
 .skills__container{
-    width: 880px;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
