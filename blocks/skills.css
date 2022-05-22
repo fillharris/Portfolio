@@ -21,7 +21,19 @@
 
 .skills__links{
     padding: 0;
+    
 }
+
+.skills__link{
+    color: black; 
+    font-size: 4rem;
+    padding: 20px;
+  }
+
+.skills__link:hover {
+    color: #fd698c;
+    transition: ease-in-out 400ms;
+  }
 
 .skills__item{
     display:inline-block;
