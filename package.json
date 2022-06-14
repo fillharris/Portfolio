@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fillharris/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Philip Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fillharris/Portfolio/issues"
+  },
+  "homepage": "https://github.com/fillharris/Portfolio#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0"
+  }
+}
