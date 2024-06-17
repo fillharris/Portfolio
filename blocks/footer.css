@@ -15,17 +15,17 @@
   color: black;
 }
 
-.footer__links{
+.footer__links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 30px auto;
   max-width: 25%;
 }
 
-.footer__link{
-  color: black; 
+.footer__link {
+  color: black;
   font-size: 3rem;
   padding: 20px;
 }
