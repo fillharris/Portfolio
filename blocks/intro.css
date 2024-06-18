@@ -5,9 +5,28 @@
 }
 
 .intro__text {
-  color:#ffeda0 ;
+  color: #ffeda0;
   font-weight: 600;
   font-size: 2rem;
+  text-align: left;
+  margin: auto;
+  padding: 2rem;
+}
+
+.banner__intro {
+  width: 70%;
+  margin: 15rem auto 15rem;
+  background-color: #c2f292;
+  -moz-box-shadow: 10px 10px black;
+  -webkit-box-shadow: 10px 10px black;
+  box-shadow: 10px 10px black;
+  border: 10px solid black;
+}
+
+.banner__intro__text {
+  color: black;
+  font-weight: 900;
+  font-size: 45px;
   text-align: left;
   margin: auto;
   padding: 2rem;
